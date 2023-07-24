@@ -50,6 +50,10 @@ substrat.addEventListener('click', ()=>{
 reset.addEventListener('click', ()=>{
         timer.textContent = 0
         clearInterval(x)
+        add.disabled  = false
+        substrat.disabled  = false
+        stop.style.display = 'none'
+        start.style['display']  = 'block'
 });
 
 stop.addEventListener('click', ()=>{
