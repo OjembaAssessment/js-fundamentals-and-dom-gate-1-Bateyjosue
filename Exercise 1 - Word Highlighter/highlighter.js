@@ -19,7 +19,13 @@ function countRepeatedWords(paragraph) {
   let obj = {}
   let arr =[]
   arrayWord.forEach(el => {
-      obj[el[0]] = el[1]
-      arr.push({el[0]:el[1]})
-  })
-  
+    obj[el[0]] = el[1]
+})
+
+let sorted = Object.values(obj).sort((a,b) => b-a)
+
+let top= sorted.splice(0,5) 
+
+for(let key in obj){
+    if(top.include(key)) arr.push(obj[key])
+}
