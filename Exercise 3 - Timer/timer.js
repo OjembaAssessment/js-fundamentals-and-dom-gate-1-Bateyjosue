@@ -1,0 +1,1 @@
+console.log("Exercise 3 - Timer");
