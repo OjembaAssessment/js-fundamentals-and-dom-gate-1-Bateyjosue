@@ -1,4 +1,53 @@
+body {
+    font-family: sans-serif;
+    width: 70%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
 #myTimer {
-    color: red;
-    font-size: 64px;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#myTimer #subtract {
+    order: -99999;
+    padding: 1rem 1rem;
+    height: max-content;
+
+}
+
+#myTimer #add {
+    padding: 1rem 1rem;
+    height: max-content;
+}
+
+#myTimer #timer {
+    flex-grow: 1;
+    border: 2px solid #ccc;
+    padding: 1rem;
+    height: max-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#myTimer #timer h3{
+    font-size: 1.3rem;
+}
+
+.action {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+}
+
+.action button {
+  padding: .6rem;
 }

@@ -1,1 +1,3 @@
-console.log("Exercise 1 - Word Highlighter");
+const myParagraph = document.querySelector('#myParagraph');
+
+console.log(myParagraph.innerText);
