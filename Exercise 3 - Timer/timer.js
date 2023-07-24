@@ -8,24 +8,28 @@ const reset = document.querySelector('#reset')
 const stop = document.querySelector('#stop')
 
 stop.style.display = 'none'
+start.style['display']  = 'block'
+
 
 let x;
 
 start.addEventListener('click', ()=>{
+    start.style['display']  = 'none'
     if(timer.textContent > 0){
         x = setInterval(()=>{
             timer.textContent = timer.textContent - 1
             if(timer.textContent == 0) {
                 clearInterval(x)
-                add.disable = false
-                substrat.disable = false
+                add.disabled  = false
+                substrat.disabled  = false
                 stop.style.display = 'none'
-            }else {
-                add.disable = true
-                substrat.disable = true
-                start.style.display = 'none'
-                stop.style.display = 'block'
+                start.style['display']  = 'block'
 
+            }else {
+                add.disabled = true
+                substrat.disabled  = true
+                stop.style.display = 'block'
+                start.style['display']  = 'none'
             }
         },1000);
     }
